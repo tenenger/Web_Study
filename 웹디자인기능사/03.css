@@ -1,0 +1,27 @@
+/* reset */
+* {margin: 0; padding:0;}
+.clearfix::before, .clearfix::after {display: block; content: '';clear: both;}
+
+/* layout */
+#wrap {width: 1200px; margin:0 auto;}
+#side {width: 300px; height: 900px; float: left; background: #999;}
+#content {width: 900px; height: 900px; float: left; background: #888;}
+
+/* header */
+#side .logo {height:150px; background: #999;}
+#side .nav {height:750px; background: #888}
+
+/* banner */
+#banner {width: 900px; height:450px; background: #777;}
+
+/* contents */
+#contents {display: flex; align-items: center;}
+#contents > div {float: left; flex-grow: 1; height: 300px;}
+#contents > div.cont1 {background: #666;}
+#contents > div.cont2 {background: #444;}
+#contents > div.cont3 {background: #555;}
+
+/* footer */
+#footer #fotleft {float:left; width:200px; background: #333; height: 150px;}
+#footer #fotright .fotnav {float:left; width: 700px;height: 75px; background: #999;}
+#footer #fotright .copyright {float:left; width: 700px; height: 75px; background: #888;}
