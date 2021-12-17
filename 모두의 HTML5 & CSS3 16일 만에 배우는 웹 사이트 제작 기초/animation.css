@@ -1,0 +1,198 @@
+/* 브라우저 호환하려면 추가로 webkit(크롬 사파리), moz(파폭)도 작성해야한다. */
+
+#intro #introwrap .lion {
+    animation: spinlion 1500ms linear infinite alternate;
+    -webkit-animation: spinlion 1500ms linear infinite alternate;
+    -moz-animation: spinlion 1500ms linear infinite alternate;
+}
+#intro #introwrap .rabbit {
+    animation: spinrabbit 1000ms linear infinite alternate;
+    -webkit-animation: spinrabbit 1000ms linear infinite alternate;
+    -moz-animation: spinrabbit 1000ms linear infinite alternate;
+}
+#intro #introwrap .bear {
+    animation: spinbear 1000ms linear infinite alternate;
+    -webkit-animation: spinbear 1000ms linear infinite alternate;
+    -moz-animation: spinbear 1000ms linear infinite alternate;
+}
+#intro #introwrap .monkey {
+    animation: spinmonkey 800ms linear infinite alternate;
+    -webkit-animation: spinmonkey 800ms linear infinite alternate;
+    -moz-animation: spinmonkey 800ms linear infinite alternate;
+}
+#intro #cloudwrap .dragonfly{
+    animation: flydragonfly 7000ms linear infinite normal;
+    -webkit-animation: flydragonfly 7000ms linear infinite normal;
+    -moz-animation: flydragonfly 7000ms linear infinite normal;
+}
+#farm3 .machinewrap .saw1 {
+    animation: rotateleftsaw 10s linear infinite;
+}
+#farm3 .machinewrap .saw2 {
+    animation: rotaterightsaw 10s linear infinite reverse;
+}
+#farm3 .machinewrap .second {
+    animation: rotatetimer 10s linear infinite;
+} 
+#forest1 .rabbit1 {
+    animation: rotateforest1rabbit1 1s linear infinite alternate;
+}
+#forest1 .rabbit2 {
+    animation: rotateforest1rabbit2 1s linear infinite alternate;
+}
+#forest2 .machinewrap .machineleft {
+    animation: moveleft 1s linear infinite alternate;
+}
+#forest2 .machinewrap .machineright {
+    animation: moveright 1s linear infinite alternate;
+}
+#forest3 .bird_big {
+    animation: rotatebigbird 1s linear infinite alternate;
+}
+#forest3 .bird_sm {
+    animation: rotatesmbird 1s linear infinite alternate;
+}
+#science #sciencewrap #scienceleftwrap .gly {
+    animation: spingly 1500ms linear infinite alternate;
+}
+#science #sciencewrap #sciencewrapright .water {
+    animation: spinwater 1500ms linear infinite alternate;
+}
+#night1 #star .star1, #night1 #star .star2, #night1 #star .star3 {
+    animation: pulsestar 1s linear infinite alternate; 
+}
+#night2 .moon {
+    animation: movemoon 10s linear infinite ;
+}
+#morning .sun {
+    animation: movesun 10s linear 1500ms infinite ;
+}
+#kitchen #kitchensteamwrap .bubble {
+    animation: kitchenbubble 3s linear infinite forwards;
+}
+@keyframes spinlion {
+    from {transform:rotate(-10deg);}
+    to {transform:rotate(10deg);}
+}
+@-webkit-keyframes spinlion {
+    from {-webkit-transform:rotate(-10deg);}
+    to {-webkit-transform:rotate(10deg)}
+}
+@-moz-keyframes spinlion {
+    from{-moz-transform:rotate(10deg);}
+    to{-moz-transform:rotate(-10deg)}
+}
+@keyframes spinrabbit {
+    from{transform:rotate(0deg);}
+    to{transform:rotate(5deg);}
+}
+@-webkit-keyframes spinrabbit {
+    from{-webkit-transform:rotate(0deg);}
+    to{-webkit-transform:rotate(5deg);}
+}
+@-moz-keyframes spinrabbit {
+    from{-moz-transform:rotate(5deg);}
+    to{-moz-transeform:rotate(0deg);}
+}
+@keyframes spinbear {
+    from{transform:rotate(10deg);}
+    to{transform:rotate(-10deg);}
+}
+@-webkit-keyframes spinbear {
+    from{-webkit-transform:rotate(10deg);}
+    to{-webkit-transform:rotate(-10deg);}
+}
+@-moz-keyframes spinbear {
+    from{-moz-transform:rotate(10deg);}
+    to{-moz-transform:rotate(-10deg);}
+}
+@keyframes spinmonkey {
+    from{transform:rotate(20deg);}
+    to{transform:rotate(50deg);}
+}
+@-webkit-keyframes spinmonkey {
+    from{-webkit-transform:rotate(20deg);}
+    to{-webkit-transform:rotate(50deg);}
+}
+@-moz-keyframes spinmonkey {
+    from{-moz-transform:rotate(20deg);}
+    to{-moz-transform: rotate(50deg);}
+}
+@keyframes flydragonfly {
+    from{left:-366px;}
+    to{left:110%;}
+}
+@-webkit-keyframes flydragonfly {
+    from{-webkit-left:-366px;}
+    to{-webkit-left:110%;}
+}
+@-moz-keyframes flydragonfly {
+    from{-moz-left:-366px;}
+    to{-moz-left:110%;}
+}
+@keyframes rotateleftsaw {
+    from{transform:rotate(0deg);}
+    to{transform:rotate(360deg);}
+}
+@keyframes rotaterightsaw {
+    from{transform:rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+@keyframes rotatetimer {
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+@keyframes rotateforest1rabbit1 {
+    from{transfrom:rotate(10deg);}
+    to{transform: rotate(20deg);}
+}
+@keyframes rotateforest1rabbit2 {
+    from{transform: rotate(0deg);}
+    to{transform:rotate(10deg);}
+}
+@keyframes moveleft {
+    from{left:0px;}
+    to{left:30px;}
+}
+@keyframes moveright {
+    from{right:0;}
+    to{right:30px;}
+}
+@keyframes rotatebigbird {
+    from{transform:rotate(0deg);}
+    to{transform: rotate(20deg);}
+}
+@keyframes rotatesmbird {
+    from{transform: rotate(20deg);}
+    to{transform: rotate(37deg);}
+}
+@keyframes spingly {
+    from{transform:rotate(0deg);}
+    to{transform: rotate(20deg);}
+}
+@keyframes spinwater {
+    from{transform:rotate(0deg);}
+    to{transform: rotate(20deg);}
+}
+@keyframes pulsestar {
+    from{transform: scale(1);}
+    to{transform:scale(0.8);}
+}
+@keyframes movemoon {
+    from{margin-left:-135px;}
+    to{margin-left:110%;
+        transform: translateY(-200px);
+    }
+}
+@keyframes movesun {
+    from{margin-left:-131px;}
+    to{margin-left:110%;
+        transform: translateY(-200px);
+    }
+}
+@keyframes kitchenbubble {
+    0% {transform:translate(0px, 0px)}
+    33.33% {transform:translate(-74.5356px, -100px)}
+    66.67% {transform:translate(-94.2809px, -200px)}
+    100% {transform:translate(-100px, -300px)}
+}

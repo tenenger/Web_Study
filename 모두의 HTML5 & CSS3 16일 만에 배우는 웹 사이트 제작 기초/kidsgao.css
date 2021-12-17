@@ -1,0 +1,714 @@
+/* reset */
+* {margin:0; padding:0;}
+
+body {
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin:0; padding:0;
+}
+button {
+    border: none;
+    /* button배경색깔을 부모배경색깔에 맞추는 코드 */
+    background-color: transparent;
+}
+header#intro {
+    width:100%;
+    height:1600px;
+    background-image: url(./img/intro/intro_bg.png);
+}
+div#introwrap {
+    position: relative;
+    height:516px;
+    width:760px;
+    left:50%;
+    top:100px;
+    /* width의 절반만큼 줄인다 */
+    margin-left:-380px;
+}
+#intro #introwrap .logo {
+    position: absolute;
+    background-image: url(./img/intro/logo.png);
+    width:760px;
+    height:516px;
+    z-index: 100;
+}
+#intro #introwrap .lion {
+    position: absolute;
+    background-image: url(./img/intro/lion.png);
+    height:161px;
+    width:161px;
+    margin:80px 0 0 30px;
+}
+#intro #introwrap .rabbit {
+    position: absolute;
+    background-image: url(./img/intro/rabbit.png);
+    height:129px;
+    width:105px;
+    margin: 90px 0 0 580px;
+}
+#intro #introwrap .bear {
+    position: absolute;
+    background-image: url(./img/intro/bear.png);
+    width:112px;
+    height:105px;
+    margin: 310px 0 0 560px;
+    z-index: 200;
+
+}
+#intro #introwrap .monkey {
+    position: absolute;
+    background-image: url(./img/intro/monkey.png);
+    width:85px;
+    height:93px;
+    margin: 310px 0 0 50px;
+    z-index: 200;
+}
+div#cloudwrap {
+    width:100%;
+    position:relative;
+    height:1050px;
+}
+div#cloudwrap .leftcloud {
+    position:absolute;
+    background-image: url(./img/intro/cloud1.png);
+    width:934px;
+    height:816px;
+    left:0;
+    z-index: 2;
+}
+div#cloudwrap .rightcloud {
+    position:absolute;
+    width:843px;
+    height:858px;
+    background-image: url(./img/intro/cloud2.png);
+    right:0;
+    z-index: 1;
+    
+}
+div#cloudwrap .dragonfly {
+    position:absolute;
+    width:366px;
+    height:228px;
+    background-image: url(./img/intro/dragonfly.png);
+    top: 820px;
+}
+/* intro exit */
+
+#farm1 {
+    position: relative;
+    background-image: url(./img/farm/farm1/farm1_bg.png);
+    width: 100%;
+    height: 800px;
+}
+
+#farm1 .leftrice {
+    background-image: url(./img/farm/farm1/leftrice.png);
+    width:390px;
+    height:670px;
+    position: absolute;
+}
+#farm1 .farmer {
+    background-image: url(./img/farm/farm1/farmer.png);
+    width:747px;
+    height:1078px;
+    position: absolute;
+    left:50%;
+    margin-left: -374px;
+}
+#farm1 .rightrice {
+    background-image: url(./img/farm/farm1/rightrice.png);
+    width:333px;
+    height:573px;
+    position: absolute;
+    right:0;
+    margin-top: 100px;;
+}
+#farm1 .farmspeechwrap {
+    position: relative;
+    top:250px;
+    left:150px;
+}
+#farm1 .farmspeechwrap .farmSpeech {
+    position: absolute;
+    color:snow;
+    font-size: 18px;
+    line-height:27px;
+}
+/* farm1 exit*/
+#farm2 {
+    position: relative;
+    width:100%;
+    height:850px;
+    background-image: url(./img/farm/farm2/farm2_bg.png);
+}
+#farm2 .leftrice2 {
+    background-image: url(./img/farm/farm2/leftrice2.png);
+    width:250px;
+    height:850px;
+    position: absolute;
+}
+#farm2 .scarecrow {
+    position: absolute;
+    background-image: url(./img/farm/farm2/scarecrow.png);
+    width:103px;
+    height:206px;
+    margin: 200px 0 0 300px;
+}
+#farm2 .rightrice2 {
+    background-image: url(./img/farm/farm2/rightrice2.png);
+    width:236px;
+    height:850px;
+    position: absolute;
+    right:0;
+}
+/* farm2 exit */
+
+#farm3 {
+    position: relative;
+    background-image: url(./img/farm/farm3/farm3_bg.png);
+    width:100%;
+    height:850px;
+}
+#farm3 .window {
+    background-image: url(./img/farm/farm3/window.png);
+    width:247px;
+    height:169px;
+    position: absolute;
+    margin: 100px 0 0 100px;
+}
+#farm3 .machinewrap {
+    position:relative;
+    width: 600px;
+    height: 455px;
+    left: 50%;
+    top: 150px;
+    margin-left: -285px;
+}
+#farm3 .machinewrap .machine1{
+    background-image: url(./img/farm/farm3/machine1.png);
+    width:586px;
+    height:455px;
+    position:absolute;
+
+}
+#farm3 .machinewrap .machinebird{
+    position: absolute;
+    background-image: url(./img/farm/farm3/machinebird.png);
+    width:44px;
+    height:48px;
+    margin: 220px 0 0 20px;
+    z-index: 999;
+}
+#farm3 .machinewrap .saw1, #farm3 .machinewrap .saw2{
+    position: absolute;
+    background-image: url(./img/farm/farm3/saw.png);
+    width:95px;
+    height:95px;
+}
+#farm3 .machinewrap .saw1{
+    margin: 140px 0 0 140px;
+}
+#farm3 .machinewrap .saw2{
+    margin: 140px 0 0 350px;
+}
+#farm3 .machinewrap .sawshadow{
+    position: absolute;
+    background-image: url(./img/farm/farm3/sawshadow.png);
+    width:95px;
+    height:95px;
+    margin: 145px 0 0 145px;;
+}
+#farm3 .machinewrap .second{
+    background-image: url(./img/farm/farm3/second.png);
+    position: absolute;
+    width:103px;
+    height:103px;
+    margin: 125px 0 0 45px;
+}
+#farm3 .chat {
+    position: relative;
+    float: right;
+    top: -100px;
+    margin-right:80px;
+}
+/* farm3 exit */
+
+#forest1 {
+    position:relative;
+    background-image: url(./img/forest/forest1/forest1_bg.png);
+    width:100%;
+    height:800px;
+}
+#forest1 .rabbit1 {
+    position:absolute;
+    background-image: url(./img/forest/forest1/rabbit1.png);
+    right:114px;
+    bottom:261px;
+    width:82px;
+    height:103px;
+}
+#forest1 .rabbit2 {
+    position:absolute;
+    background-image: url(./img/forest/forest1/rabbit2.png);
+    right:38px;
+    bottom:296px;
+    width:56px;
+    height:75px;
+}
+#forest1 .lefttree {
+    position:absolute;
+    background-image: url(./img/forest/forest1/lefttree.png);
+    width:332px;
+    height:992px;
+    left:0;
+    bottom: 0;
+}
+#forest1 .righttree {
+    position:absolute;
+    background-image: url(./img/forest/forest1/righttree.png);
+    width:304px;
+    height:570px;
+    right:0;
+}
+/* forest1 exit */
+
+#forest2 {
+    position:relative;
+    background-image: url(./img/forest/forest2/forest2_bg.png);
+    width:100%;
+    height:750px;
+}
+#forest2 .forest2tree {
+    position: absolute;
+    background-image: url(./img/forest/forest2/forest2tree.png);
+    width:304px;
+    height:282px;
+    left:0;
+    bottom:75px;
+
+}
+#forest2 .frog {
+    position: absolute;
+    background-image: url(./img/forest/forest2/frog.png);
+    width:153px;
+    height:257px;
+    left:149px;
+    top:52px;
+}
+#forest2 .machinewrap {
+    position:relative;
+    width: 374px;
+    height: 455px;
+    left: 50%;
+    top: 210px;
+    margin-left: -160px;
+}
+#forest2 .machinewrap .machinebottom {
+    position:absolute;
+    background-image: url(./img/forest/forest2/machinebottom.png);
+    width:374px;
+    height:162px;
+    bottom:106px;
+}
+#forest2 .machinewrap .machineleft {
+    position: absolute;
+    background-image: url(./img/forest/forest2/machineleft.png);
+    width:123px;
+    height:228px;
+    left:0;
+}
+#forest2 .machinewrap .machineright {
+    position: absolute;
+    background-image: url(./img/forest/forest2/machineright.png);
+    width:123px;
+    height:248px;
+    right:0;
+    top:-19px;
+}
+#forest2 .forestbubble {
+    position: relative;
+    float: right;
+    top: -270px;
+    margin-right:15px;
+}
+/* forest2 exit */
+
+#forest3 {
+    position:relative;
+    background-image: url(./img/forest/forest3/forest3_bg.png);
+    width:100%;
+    height:600px;
+}
+#forest3 .forest3tree {
+    position:absolute;
+    background-image: url(./img/forest/forest3/forest3tree.png);
+    width:357px;
+    height:472px;
+    right:-2px;
+    bottom:56px;
+}
+#forest3 .bird_big {
+    position:absolute;
+    background-image: url(./img/forest/forest3/bird_big.png);
+    width:83px;
+    height:80px;
+    right:200px;
+    bottom:128px;
+}
+#forest3 .bird_sm {
+    position:absolute;
+    background-image: url(./img/forest/forest3/bird_sm.png);
+    width:40px;
+    height:35px;
+    right:157px;
+    top:206px;
+}
+/* forest3 exit */
+#science {
+    position:relative;
+    background-image: url(./img/science/science_bg.png);
+    width:100%;
+    height:800px;
+}
+#science #sciencewrap {
+    position: relative;
+    width:1066px;
+    height:611px;
+    left:50%;
+    margin-left:-533px;
+}
+#science #sciencewrap #scienceleftwrap {
+    float:left;
+}
+#science #sciencewrap #scienceleftwrap .gly {
+    background-image: url(./img/science/gly.png);
+    width:230px;
+    height:192px;
+    margin-left:55px;
+    margin-bottom:130px;
+}
+#science #sciencewrap #scienceleftwrap .lefttitle {
+    color:#8E7577;
+    font-size: 18px;
+    line-height:26px;
+    padding-top: 10px;
+}
+#science #sciencewrap #sciencewrapcenter {
+    float: left;
+}
+#science #sciencewrap #sciencewrapcenter .grape {
+    position: relative;
+    background-image: url(./img/science/grape.png);
+    width:241px;
+    height:216px;
+    left:50%;
+    margin-left:-120px;
+    z-index: 100;
+}
+#science #sciencewrap #sciencewrapcenter .hopperback{
+    background-image: url(./img/science/hopperback.png);
+    position: absolute;
+    width:488px;
+    height:438px;
+    margin-top:-45px;
+}
+#science #sciencewrap #sciencewrapcenter .hopperfront{
+    position: relative;
+    width: 485px;
+    height: 390px;
+    background-image: url(./img/science/hopperfront.png);
+    margin-top: 5px;
+    margin-left: 2px;
+}
+#science #sciencewrap #sciencewrapright {
+    float: right;
+}
+#science #sciencewrap #sciencewrapright .righttitle {
+    color:#8E7577;
+    font-size: 18px;
+    line-height:26px;
+    padding-top: 10px;
+}
+#science #sciencewrap #sciencewrapright .water {
+    background-image: url(./img/science/water.png);
+    width:204px;
+    height:191px;
+    margin-bottom: 130px; 
+}
+/* science exit */
+#oneday {
+    position:relative;
+}
+#oneday #night1 {
+    position:relative;
+    background-image: url(./img/oneday/night1/night1_bg.png);
+    width:100%;
+    height:700px;
+}
+#oneday #night1 .owl {
+    position:absolute;
+    background-image: url(./img/oneday/night1/owl.png);
+    width:334px;
+    height:571px;
+}
+#oneday #night1 #star {
+    position: relative;
+    width:750px;
+    height:400px;
+    top: 150px;
+    margin-left: 600px;
+}
+#oneday #night1 #star .star1, #oneday #night1 #star .star2, #oneday #night1 #star .star3 {
+    position:absolute;
+    background-image: url(./img/oneday/night1/star1.png);
+    width:53px;
+    height:50px;
+}
+#oneday #night1 #star .star1 {
+    margin-top: 350px; 
+}
+#oneday #night1 #star .star2 {
+    margin-left: 650px; 
+}
+#oneday #night1 #star .star3 {
+    margin: 250px 0 0 500px;
+}
+/* night1 exit */
+
+#night2 {
+    position:relative;
+    background-image: url(./img/oneday/night2/night2_bg.png);
+    width:100%;
+    height:800px;
+}
+#night2 .moon {
+    position:absolute;
+    background-image: url(./img/oneday/night2/moon.png);
+    width:135px;
+    height:135px;
+    left:0;
+    top:30px;
+}
+#night2 .moontree {
+    position:absolute;
+    background-image: url(./img/oneday/night2/moontree.png);
+    width:243px;
+    height:558px;
+    right:0;
+    bottom:44px;
+}
+#night2 .night2bubble {
+    position:absolute;
+    bottom: 150px;
+    left: 90px;
+}
+/* night2 exit */
+
+#morning {
+    position: relative;
+    background-image: url(./img/oneday/morning/morning_bg.png);
+    width:100%;
+    height:800px;
+}
+#morning .sun {
+    position: absolute;
+    background-image: url(./img/oneday/morning/sun.png);
+    width:131px;
+    height:131px;
+    top:0;
+    left:0;
+}
+#morning .rightpine {
+    position: absolute;
+    background-image: url(./img/oneday/morning/rightpine.png);
+    width:294px;
+    height:609px;
+    right:0;
+    margin-top:90px;
+}
+#morning .leftpine {
+    position: absolute;
+    background-image: url(./img/oneday/morning/leftpine.png);
+    width:231px;
+    height:329px;
+    left:0;
+    margin-top:241px;
+}
+/* morning exit */
+
+#kitchen {
+    position: relative;
+    background-image: url(./img/kitchen/kitchen_bg.png);
+    width:100%;
+    height:800px;
+}
+#kitchen #kitchentopwrap {
+    position:absolute;
+    width:100%;
+    height:400px;
+}
+#kitchen #kitchentopwrap .pan {
+    float:left;
+    background-image: url(./img/kitchen/pan.png);
+    width:253px;
+    height:384px;
+}
+#kitchen #kitchentopwrap .pot {
+    float: right;
+    background-image: url(./img/kitchen/pot.png);
+    width:243px;
+    height:132px;
+}
+#kitchen #kitchensteamwrap {
+    position:relative;
+    width:500px;
+    height:500px;
+    left:50%;
+    margin-left: -250px;
+    top:300px;
+}
+#kitchen #kitchensteamwrap .steam {
+    position:absolute;
+    background-image: url(./img/kitchen/steam.png);
+    width:479px;
+    height:457px;
+}
+#kitchen #kitchensteamwrap .bubble {
+    position: absolute;
+    background-image: url(./img/kitchen/bubble.png);
+    width:52px;
+    height:54px;
+    top:120px;
+    left:-60px;
+}
+#kitchen #kitchenrightwrap {
+    position: absolute;
+    right:0;
+    bottom:170px;
+}
+/* kitchen exit */
+
+#color1 {
+    position:relative;
+    background-image: url(./img/color/color1/color1_bg.png);
+    width:100%;
+    height:750px;
+}
+#color1 #bubblewrap {
+    position:relative;
+    left:1100px;
+    top:331px;
+}
+#color1 #bubblewrap .color1bubble {
+    position: absolute;
+    z-index: 2;
+    top:36px;
+}
+#color1 #bubblewrap .red {
+    position: absolute;
+    background-image: url(./img/color/color1/red.png);
+    width:177px;
+    height:159px;
+}
+#color1 .penguin {
+    position: absolute;
+    background-image: url(./img/color/color1/penguin.png);
+    width:356px;
+    height:244px;
+    top:100px;
+    left:70px;
+}
+/* color1 exit */
+
+#color2 {
+    position: relative;
+    background-image: url(./img/color/color2/color2_bg.png);
+    width:100%;
+    height:800px;
+}
+#color2 .hourse {
+    position: absolute;
+    background-image: url(./img/color/color2/horse.png);
+    width:188px;
+    height:241px;
+    right:160px;
+    top:100px;
+
+}
+#color2 #color2leftwrap {
+    clear: both;
+    position:relative;
+    width:500px;
+    top:400px;
+    margin-left: 50px;
+}
+#color2 #color2leftwrap .color2bubble {
+    margin-bottom: 30px; 
+}
+#color2 #color2leftwrap .color2comment{
+    color: #8E7577;
+}
+#color2 #color2leftwrap #btnwrap{
+    margin-bottom: 30px; 
+}
+/* 버튼 3개를 x축으로 정렬하려면 float나 inline-block을 사용하는데 button은 기본값으로 inline-block을 가지고 있기때문에 따로 적용필요X */
+#color2 #color2leftwrap #btnwrap .btn_blue{
+    background-image: url(./img/color/color2/btn/btn_blue.png);
+    width:59px;
+    height:82px;
+}
+#color2 #color2leftwrap #btnwrap .btn_red{
+    background-image: url(./img/color/color2/btn/btn_red.png);
+    width:59px;
+    height:82px;
+}
+#color2 #color2leftwrap #btnwrap .btn_yellow{
+    background-image: url(./img/color/color2/btn/btn_yellow.png);
+    width:59px;
+    height:82px;
+    right:0;
+}
+/* color2 exit */
+
+#color3 {
+    position:relative;
+    background-image: url(./img/color/color3/color3_bg.png);
+    width:100%;
+    height:800px;
+}
+#color3 .backlogo {
+    position:absolute;
+    background-image: url(./img/color/color3/backlogo.png);
+    width:759px;
+    height:516px;
+    left:50%;
+    margin-left: -379px;
+    top:210px;
+}
+#color3 .book {
+    position:absolute;
+    background-image: url(./img/color/color3/book.png);
+    width:417px;
+    height:178px;
+    right:50px;
+    top:100px;
+}
+#color3 .dice {
+    position:absolute;
+    background-image: url(./img/color/color3/dice.png);
+    width:239px;
+    height:200px;
+    left:0;
+    bottom:0;
+}
+#color3 .flag {
+    position:absolute;
+    background-image: url(./img/color/color3/flag.png);
+    width:1774px;
+    height:178px;
+    left:50%;
+    margin-left: -887px;
+}
+/* color3 exit */
