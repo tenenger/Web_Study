@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쿵쿵따</title>
+</head>
+<body>
+    <div>
+        <span id="order">1</span>
+        번째 사람
+    </div>
+    <div>
+        제시어:
+        <span id="word"></span>
+    </div>
+    <input id="input" type="text">
+    <button id="button">입력</button>
+    <script>
+        const number = Number(prompt('쿵쿵따 사람수를 숫자만 입력해주세요'));
+        const $order = document.querySelector('#order');
+        const $word = document.querySelector('#word');
+        const $input = document.querySelector('#input');
+        const $button = document.querySelector('#button');
+        let word;
+        let newword;
+        
+        
+
+        const onbutton = () => {
+            if (newword.length === 3 && (!word || word[word.length-1] === newword[0])) {
+                word = newword;
+                $word.textContent = newword;
+                const order = Number($order.textContent);
+
+                if (order + 1 > number) {
+                    $order.textContent = 1;
+                }
+                else {
+                    $order.textContent = order + 1;
+                }
+            }
+            else {
+                alert('틀렸습니다. 다시 입력해 주세요');
+            }
+            $input.value = '';
+            $input.focus();
+        }
+
+        const oninput = (event) => {
+            newword = event.target.value;
+        }
+
+        $input.addEventListener('input', oninput);
+        $button.addEventListener('click', onbutton);
+        
+    </script>
+</body>
+</html>
