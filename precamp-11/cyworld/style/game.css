@@ -88,6 +88,9 @@ html, body {
     display: flex;
     align-items: center;
 }
+.game__subtitle {
+    padding-bottom: 4px;
+}
 .numbers {
     color:black;
     width:150px;

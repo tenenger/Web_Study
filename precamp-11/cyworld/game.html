@@ -3,6 +3,31 @@
 <head>
     <title>HOME</title>
     <link href="style/game.css" rel="stylesheet">
+    <script>
+        function startword () {
+            const word = document.getElementById('word').innerText
+            const lastword = word[word.length -1]
+            const myword = document.getElementById('myword').value
+            const firstword = myword[0]
+
+            // 만약 firstword와 lastword가 같다면
+                // 결과란에 정답입니다를 띄운다.
+                // 제시어를 입력값으로 교체해준다.
+                // 입력값을 비운다.
+            // 만약 firstword와 lastword가 다르면
+                // 결과란에 틀렸습니다를 띄운다.
+                // 입력값을 비운다.
+            if (firstword === lastword) {
+                document.getElementById('result').innerText = '정답입니다.'
+                document.getElementById('word').innerText = myword
+                document.getElementById('myword').value = ''
+            }
+            else {
+                document.getElementById('result').innerText = '틀렸습니다.'
+                document.getElementById('myword').value = ''
+            }
+        }
+    </script>
 </head>
 <body>
     <div class="main">
@@ -19,7 +44,7 @@
             <div class="game__subtitle">제시어 : <span id="word">코드캠프</span></div>
             <div class="word__text">
                 <input id="myword" type="text" placeholder="단어를 입력하세요">
-                <button class="search" onclick="">입력</button>
+                <button class="search" onclick="startword()">입력</button>
             </div>
             <div id="result">결과!</div>
         </div>
@@ -53,7 +78,15 @@
 </body>
 </html>
 
+<!-- 기록 -->
+<!-- 기능을 가진다면 ()를 붙인다. -->
+<!-- 함수 선언식, 함수 표현식, 화살표 함수 -->
+<!-- 함수 만드는 방법은 달라도, 실행방법은 동일하다. -->
+<!-- 내장함수는 시간지연함수와 시간반복함수 -->
+<!-- 시간지연함수는 몇시간 후에 진행되게 한다. -->
+<!-- 시간 반복함수 몇시간마다 진행되게 한다. -->
 <!-- 숙제 -->
-<!-- selfcheck -->
-<!-- 알고리즘 연습문제8번까지, 실무문제 6번까지-->
-<!-- 싸이월드 로또 완성 -->
+<!-- 싸이월드 주크박스 -->
+<!-- 알고리즘 -->
+<!-- 셀프체크 -->
+<!-- git설치 -->
