@@ -124,3 +124,25 @@ iframe {
     height:100%;
     border-radius: 15px;
 }
+.navigation{
+    width:62px;
+    height:100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    left: 772px;
+    top:100px;
+}
+.navigation__item {
+    width:80px;
+    height:30px;
+    background-color: #298eb5;
+    font-size: 11px;
+    text-align: center;
+    color:white;
+    border: 1px solid black;
+    border-radius: 0 10px 10px 0;
+    line-height: 30px;
+    cursor: pointer;
+}
